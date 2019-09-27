@@ -11,13 +11,13 @@ import NavsHorizontal from './Examples/NavHorizontal';
 
 const tabsContent = [
     {
-        title: 'Vertical Menus',
+        title: 'Navigation Menus',
         content: <NavsVertical/>
     },
-    {
-        title: 'Horizontal Menus',
-        content: <NavsHorizontal/>
-    },
+    // {
+    //     title: 'Horizontal Menus',
+    //     content: <NavsHorizontal/>
+    // },
 ];
 
 function getTabs() {
@@ -39,7 +39,12 @@ export default class NavigationExample extends React.Component {
                     subheading="Navigation menus are one of the basic building blocks for any web or mobile app."
                     icon="pe-7s-photo-gallery icon-gradient bg-mean-fruit"
                 />
-                <Tabs tabsWrapperClass="body-tabs body-tabs-layout" transform={false} showInkBar={true} items={getTabs()}/>
+                <Tabs
+                  tabsWrapperClass="body-tabs body-tabs-layout"
+                  transform={false}
+                  showInkBar={true}
+                  items={getTabs()}
+                />
             </Fragment>
         );
     }

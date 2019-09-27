@@ -62,6 +62,12 @@ class BasicAlerts extends React.Component {
                                         <Alert color="dark">
                                             This is a dark alert — check it out!
                                         </Alert>
+                                        <Alert color="focus">
+                                            This is a focus alert — check it out!
+                                        </Alert>
+                                        <Alert color="alternate">
+                                            This is a alternate alert — check it out!
+                                        </Alert>
                                     </CardBody>
                                 </Card>
                             </Col>
@@ -104,6 +110,14 @@ class BasicAlerts extends React.Component {
                                         </Alert>
                                         <Alert color="dark">
                                             This is a dark alert with <a href="javascript:void(0);" className="alert-link">an example link</a>.
+                                            Give it a click if you like.
+                                        </Alert>
+                                        <Alert color="focus">
+                                            This is a focus alert with <a href="javascript:void(0);" className="alert-link">an example link</a>.
+                                            Give it a click if you like.
+                                        </Alert>
+                                        <Alert color="alternate">
+                                            This is a alternate alert with <a href="javascript:void(0);" className="alert-link">an example link</a>.
                                             Give it a click if you like.
                                         </Alert>
                                     </CardBody>

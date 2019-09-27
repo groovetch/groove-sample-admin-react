@@ -4,12 +4,13 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import {
     Row, Col,
-    Card, CardImg, CardText, CardBody,
+    Card, CardImg, CardBody,
     CardTitle, CardSubtitle, CardLink, CardHeader, CardFooter
 } from 'reactstrap';
 
 
 class CardsBasic extends Component {
+    urlPlaceholder = 'https://placeimg.com/318/180/arch';
 
     render() {
         return (
@@ -76,7 +77,7 @@ class CardsBasic extends Component {
                         <Col md="4">
                             <Card className="main-card mb-3">
                                 <CardImg top width="100%"
-                                         src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
+                                         src={this.urlPlaceholder}
                                          alt="Card image cap"/>
                                 <CardBody>
                                     <CardTitle>Card title</CardTitle>
@@ -97,7 +98,7 @@ class CardsBasic extends Component {
 
                                 </CardBody>
                                 <CardImg bottom width="100%"
-                                         src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
+                                         src={this.urlPlaceholder}
                                          alt="Card image cap"/>
                             </Card>
                         </Col>
@@ -108,8 +109,8 @@ class CardsBasic extends Component {
                                     <CardSubtitle className="mb-0">Card subtitle</CardSubtitle>
                                 </CardBody>
                                 <img width="100%"
-                                     src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
-                                     alt="Card image cap"/>
+                                     src={this.urlPlaceholder}
+                                     alt="Card image cap"/>     
                                 <CardBody>
                                     Some quick example text to build on the card title and make up the bulk of
                                         the
@@ -120,7 +121,7 @@ class CardsBasic extends Component {
                             </Card>
                             <Card className="main-card mb-3">
                                 <CardImg top width="100%"
-                                         src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
+                                         src={this.urlPlaceholder}
                                          alt="Card image cap"/>
                                 <CardBody>
                                     <CardTitle>Card Title</CardTitle>

@@ -5,7 +5,10 @@ import { unregister } from './registerServiceWorker';
 
 import { HashRouter } from 'react-router-dom';
 // import './assets/base.css';
-import './assets/demo.scss';
+// import './assets/demo.scss';
+
+import './assets/demo2.scss';
+
 import Main from './DemoPages/Main';
 import configureStore from './config/configureStore';
 import { Provider } from 'react-redux';

@@ -64,7 +64,7 @@ class CardsColors extends Component {
                             </Card>
                             <Card className="mb-3" inverse>
                                 <CardImg width="100%"
-                                         src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97270&w=318&h=270&bg=333333&txtclr=666666"
+                                         src="https://placeimg.com/318/180/arch"
                                          alt="Card image cap"/>
                                 <CardImgOverlay>
                                     <CardTitle className="text-white">Card Title</CardTitle>
