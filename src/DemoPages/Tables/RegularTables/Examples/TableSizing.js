@@ -1,10 +1,10 @@
 import React from 'react';
 import { Table } from 'reactstrap';
-
+import opt from './cfg';
 export default class TableSizing extends React.Component {
   render() {
     return (
-      <Table size="sm" className="mb-0">
+      <Table size="sm" className={`mb-0 ${opt.class}`}>
         <thead>
           <tr>
             <th>#</th>

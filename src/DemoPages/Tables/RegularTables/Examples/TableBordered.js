@@ -1,10 +1,10 @@
 import React from 'react';
 import { Table } from 'reactstrap';
-
+import opt from './cfg';
 export default class TableBordered extends React.Component {
   render() {
     return (
-      <Table className="mb-0" bordered>
+      <Table className={`mb-0 ${opt.class}`} bordered>
         <thead>
           <tr>
             <th>#</th>

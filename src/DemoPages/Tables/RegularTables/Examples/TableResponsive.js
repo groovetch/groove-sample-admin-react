@@ -1,10 +1,10 @@
 import React from 'react';
 import { Table } from 'reactstrap';
-
+import opt from './cfg';
 export default class TableResponsive extends React.Component {
   render() {
     return (
-      <Table responsive className="mb-0">
+      <Table responsive className={`mb-0 ${opt.class}`}>
         <thead>
           <tr>
             <th>#</th>

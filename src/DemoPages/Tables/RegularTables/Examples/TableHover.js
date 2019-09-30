@@ -1,14 +1,14 @@
 import React from 'react';
 import { Table } from 'reactstrap';
-
+import opt from './cfg';
 export default class TableHover extends React.Component {
   render() {
     return (
-      <Table hover className="mb-0">
+      <Table hover className={`mb-0 ${opt.class}`}>
         <thead>
           <tr>
             <th>#</th>
-            <th>First Name</th>
+            <th>First Name2</th>
             <th>Last Name</th>
             <th>Username</th>
           </tr>

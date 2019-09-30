@@ -8,6 +8,7 @@ import {
 } from "react-simple-maps"
 
 import world from './Static/world-50m.json';
+import colorDefault from './mapColor.js';
 
 export default class VectorMapsBasic extends React.Component {
 
@@ -34,24 +35,7 @@ export default class VectorMapsBasic extends React.Component {
                                         geography={geography}
                                         projection={projection}
                                         style={{
-                                            default: {
-                                                fill: "#e9ecef",
-                                                stroke: "#adb5bd",
-                                                strokeWidth: 0.75,
-                                                outline: "none",
-                                            },
-                                            hover: {
-                                                fill: "#adb5bd",
-                                                stroke: "#adb5bd",
-                                                strokeWidth: 0.75,
-                                                outline: "none",
-                                            },
-                                            pressed: {
-                                                fill: "#3f6ad8",
-                                                stroke: "#adb5bd",
-                                                strokeWidth: 0.75,
-                                                outline: "none",
-                                            },
+                                          ...colorDefault
                                         }}
                                     />
                                 ))}

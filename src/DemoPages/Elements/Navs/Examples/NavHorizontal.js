@@ -5,7 +5,6 @@ import {
     Row, Col,
     Card, CardBody,
     CardTitle, Nav, NavItem, NavLink
-
 } from 'reactstrap';
 
 export default class NavsHorizontal extends React.Component {

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Table } from 'reactstrap';
-
+import opt from './cfg';
 export default class TableBorderless extends React.Component {
   render() {
     return (
-      <Table borderless className="mb-0">
+      <Table borderless className={`mb-0 ${opt.class}`}>
         <thead>
           <tr>
             <th>#</th>

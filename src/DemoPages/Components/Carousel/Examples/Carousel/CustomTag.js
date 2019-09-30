@@ -69,7 +69,7 @@ class CustomExample extends Component {
                 <CarouselItem
                     className="custom-tag"
                     tag="div"
-                    key={item.id}
+                    key={`custom-item-${item.id}`}
                     onExiting={this.onExiting}
                     onExited={this.onExited}
                 >

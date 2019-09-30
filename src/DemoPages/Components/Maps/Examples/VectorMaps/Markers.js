@@ -8,7 +8,7 @@ import {
     Markers,
     Marker,
 } from "react-simple-maps"
-
+import colorDefault from './mapColor.js';
 import world from './Static/world-50m.json';
 
 const include = [
@@ -55,24 +55,7 @@ export default class VectorMapsMarkers extends React.Component {
                                             geography={geography}
                                             projection={projection}
                                             style={{
-                                                default: {
-                                                    fill: "#e9ecef",
-                                                    stroke: "#adb5bd",
-                                                    strokeWidth: 0.75,
-                                                    outline: "none",
-                                                },
-                                                hover: {
-                                                    fill: "#CFD8DC",
-                                                    stroke: "#adb5bd",
-                                                    strokeWidth: 0.75,
-                                                    outline: "none",
-                                                },
-                                                pressed: {
-                                                    fill: "#3f6ad8",
-                                                    stroke: "#adb5bd",
-                                                    strokeWidth: 0.75,
-                                                    outline: "none",
-                                                },
+                                                ...colorDefault,
                                             }}
                                         />
                                     )
@@ -85,9 +68,9 @@ export default class VectorMapsMarkers extends React.Component {
                                     key={i}
                                     marker={marker}
                                     style={{
-                                        default: { fill: "#3f6ad8" },
-                                        hover: { fill: "#FFFFFF" },
-                                        pressed: { fill: "#3f6ad8" },
+                                        default: { fill: "#ff5cab" },
+                                        hover: { fill: "#FFFFFF", outline: 'none' },
+                                        pressed: { fill: "#ff5cab", outline: 'none' },
                                     }}
                                 >
                                     <circle
@@ -95,7 +78,7 @@ export default class VectorMapsMarkers extends React.Component {
                                         cy={0}
                                         r={10}
                                         style={{
-                                            stroke: "#3f6ad8",
+                                            stroke: "#ff5cab",
                                             strokeWidth: 3,
                                             opacity: 0.9,
                                         }}

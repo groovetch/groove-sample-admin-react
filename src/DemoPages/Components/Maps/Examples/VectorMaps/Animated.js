@@ -16,6 +16,7 @@ import world from './Static/world-110m.json';
 import {
     Button,
 } from 'reactstrap';
+import colorDefault from './mapColor.js'; 
 
 const cities = [
     {name: "Zurich", coordinates: [8.5417, 47.3769]},
@@ -113,24 +114,7 @@ export default class VectorMapsAnimated extends React.Component {
                                                     geography={geography}
                                                     projection={projection}
                                                     style={{
-                                                        default: {
-                                                            fill: "#e9ecef",
-                                                            stroke: "#adb5bd",
-                                                            strokeWidth: 0.75,
-                                                            outline: "none",
-                                                        },
-                                                        hover: {
-                                                            fill: "#CFD8DC",
-                                                            stroke: "#adb5bd",
-                                                            strokeWidth: 0.75,
-                                                            outline: "none",
-                                                        },
-                                                        pressed: {
-                                                            fill: "#3f6ad8",
-                                                            stroke: "#adb5bd",
-                                                            strokeWidth: 0.75,
-                                                            outline: "none",
-                                                        },
+                                                        ...colorDefault
                                                     }}
                                                 />
                                             ))}
@@ -145,9 +129,9 @@ export default class VectorMapsAnimated extends React.Component {
                                                 <circle
                                                     cx={0}
                                                     cy={0}
-                                                    r={6}
-                                                    fill="#3f6ad8"
-                                                    stroke="#DF3702"
+                                                    r={8}
+                                                    fill="#ff5cab"
+                                                    stroke="#ff5cab"
                                                 />
                                             </Marker>
                                         ))}

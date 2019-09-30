@@ -53,7 +53,7 @@ const subregions = [
 
 const popScale = scaleLinear()
     .domain([0, 100000000, 1400000000])
-    .range(["#CFD8DC", "#adb5bd", "#37474F"])
+    .range(["#f1f6fd", "#8f8f8f", "#094277"]) 
 
 
 export default class VectorMapsDatasets extends React.Component {
@@ -120,7 +120,7 @@ export default class VectorMapsDatasets extends React.Component {
                                                     fill: this.state.populationData
                                                         ? popScale(geography.properties.pop_est)
                                                         : colorScale[subregions.indexOf(geography.properties.subregion)],
-                                                    stroke: "#adb5bd",
+                                                    stroke: "#8f8f8f",
                                                     strokeWidth: 0.75,
                                                     outline: "none",
                                                 },
@@ -128,15 +128,15 @@ export default class VectorMapsDatasets extends React.Component {
                                                     fill: this.state.populationData
                                                         ? "#263238"
                                                         : chroma(colorScale[subregions.indexOf(geography.properties.subregion)]).darken(0.5),
-                                                    stroke: "#adb5bd",
+                                                    stroke: "#8f8f8f",
                                                     strokeWidth: 0.75,
                                                     outline: "none",
                                                 },
                                                 pressed: {
                                                     fill: this.state.populationData
-                                                        ? "#263238"
+                                                        ? "#094277"
                                                         : chroma(colorScale[subregions.indexOf(geography.properties.subregion)]).brighten(0.5),
-                                                    stroke: "#adb5bd",
+                                                    stroke: "#8f8f8f",
                                                     strokeWidth: 0.75,
                                                     outline: "none",
                                                 }

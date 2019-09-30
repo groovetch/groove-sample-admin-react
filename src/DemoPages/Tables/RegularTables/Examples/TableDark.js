@@ -1,10 +1,10 @@
 import React from 'react';
 import { Table } from 'reactstrap';
-
+import opt from './cfg';
 export default class TableDark extends React.Component {
   render() {
     return (
-      <Table dark className="mb-0">
+      <Table dark className={`mb-0`}>
         <thead>
           <tr>
             <th>#</th>

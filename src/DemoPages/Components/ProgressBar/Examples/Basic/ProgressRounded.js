@@ -11,7 +11,7 @@ const ProgressRoundedExample = (props) => {
             <Progress className="progress-bar-rounded mb-3" value="100" />
             <Progress className="progress-bar-rounded" multi>
                 <Progress bar value="15" />
-                <Progress bar color="success" value="30" />
+                <Progress bar color="alternate" value="30" />
                 <Progress bar color="info" value="25" />
                 <Progress bar color="warning" value="20" />
                 <Progress bar color="danger" value="5" />

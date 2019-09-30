@@ -1,16 +1,13 @@
 import React, {Fragment} from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import {
-    Button, UncontrolledButtonDropdown,
-    DropdownToggle, Dropdown, DropdownMenu,
-    DropdownItem,
-} from 'reactstrap';
 
 import {
     Row, Col,
     Card, CardBody,
-    CardTitle, Nav, NavItem, NavLink
-
+    CardTitle, Nav, NavItem, NavLink,
+    Button, UncontrolledButtonDropdown,
+    DropdownToggle, Dropdown, DropdownMenu,
+    DropdownItem,
 } from 'reactstrap';
 
 export default class NavsVertical extends React.Component {
@@ -109,7 +106,6 @@ export default class NavsVertical extends React.Component {
                                             </Nav>
                                         </Col>
                                     </Row>
-                                    <div className="divider"/>
                                     <div className="text-center">
                                         <UncontrolledButtonDropdown direction="down">
                                             <DropdownToggle caret className="mb-2 mr-2" color="primary">
@@ -186,7 +182,7 @@ export default class NavsVertical extends React.Component {
                                 <CardBody>
                                     <CardTitle>Separators & Headers</CardTitle>
                                     <Row>
-                                        <Col>
+                                        <Col md="6">
                                             <Nav vertical>
                                                 <NavItem className="nav-item-header">
                                                     Activity
@@ -220,15 +216,15 @@ export default class NavsVertical extends React.Component {
                                                         Logs
                                                     </NavLink>
                                                 </NavItem>
-                                                <NavItem className="nav-item-divider"/>
-                                                <NavItem className="nav-item-btn">
+                                                <NavItem>
                                                     <Button size="sm" className="btn-wide btn-shadow" color="danger">
                                                         Cancel
                                                     </Button>
                                                 </NavItem>
                                             </Nav>
                                         </Col>
-                                        <Col>
+
+                                        <Col md="6">
                                             <Nav vertical>
                                                 <NavItem className="nav-item-header">
                                                     Activity
@@ -278,7 +274,7 @@ export default class NavsVertical extends React.Component {
                                             </Nav>
                                         </Col>
                                     </Row>
-                                    <div className="divider"/>
+                                    {/* <div className="divider"></div> */}
                                     <div className="text-center">
                                         <UncontrolledButtonDropdown direction="up">
                                             <DropdownToggle caret className="mb-2 mr-2" color="primary">
@@ -388,8 +384,8 @@ export default class NavsVertical extends React.Component {
                             </Card>
                         </Col>
                         <Col md="12">
-                            <Card className="main-card mb-3">
-                                <CardBody>
+                            {/* <Card className="main-card mb-3">
+                                <CardBody className="menu-hover-styles">
                                     <CardTitle>Menu Hover Styles</CardTitle>
                                     <Row>
                                         <Col md="3">
@@ -495,6 +491,124 @@ export default class NavsVertical extends React.Component {
                                             </Card>
                                         </Col>
                                     </Row>
+                                </CardBody>
+                            </Card> */}
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col md="12">
+                            <Card className="main-card mb-3">
+                                <CardBody>
+                                    <CardTitle>Horizontal Menu</CardTitle>
+                                    <Nav>
+                                        <NavLink active href="javascript:void(0);">Link</NavLink>
+                                        <NavLink href="javascript:void(0);">Link</NavLink>
+                                        <NavLink href="javascript:void(0);">Another Link</NavLink>
+                                        <NavLink disabled href="javascript:void(0);">Disabled Link</NavLink>
+                                    </Nav>
+                                    <div className="divider"/>
+                                    <Nav>
+                                        <NavLink active href="javascript:void(0);">
+                                            <i className="nav-link-icon pe-7s-settings"> </i>
+                                            <span>Link</span>
+                                        </NavLink>
+                                        <NavLink href="javascript:void(0);">
+                                            <i className="nav-link-icon pe-7s-wallet"> </i>
+                                            <span>Link</span>
+                                            <div className="badge badge-pill badge-danger">12</div>
+                                        </NavLink>
+                                        <NavLink href="javascript:void(0);">
+                                            <span>Another Link</span>
+                                        </NavLink>
+                                        <NavLink disabled href="javascript:void(0);">
+                                            <i className="nav-link-icon pe-7s-box1"> </i>
+                                            <span>Disabled Link</span>
+                                        </NavLink>
+                                    </Nav>
+                                    <div className="divider"/>
+                                    <Nav justified>
+                                        <NavItem>
+                                            <NavLink active href="javascript:void(0);">
+                                                <i className="nav-link-icon pe-7s-settings"> </i>
+                                                <span>Justified</span>
+                                            </NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink href="javascript:void(0);">
+                                                <i className="nav-link-icon pe-7s-chat"> </i>
+                                                <span>Link</span>
+                                                <div className="badge badge-success">NEW</div>
+                                            </NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink href="javascript:void(0);">
+                                                <span>Another Link</span>
+                                            </NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink disabled href="javascript:void(0);">
+                                                <i className="nav-link-icon pe-7s-box1"> </i>
+                                                <span>Disabled Link</span>
+                                            </NavLink>
+                                        </NavItem>
+                                    </Nav>
+                                </CardBody>
+                            </Card>
+                            <Card className="main-card mb-3">
+                                <CardBody>
+                                    <CardTitle>Active Links</CardTitle>
+                                    <Nav pills>
+                                        <NavLink active href="javascript:void(0);">Link</NavLink>
+                                        <NavLink href="javascript:void(0);">Link</NavLink>
+                                        <NavLink href="javascript:void(0);">Another Link</NavLink>
+                                        <NavLink disabled href="javascript:void(0);">Disabled Link</NavLink>
+                                    </Nav>
+                                    <div className="divider"/>
+                                    <Nav pills>
+                                        <NavLink active href="javascript:void(0);">
+                                            <i className="nav-link-icon pe-7s-settings"> </i>
+                                            <span>Link</span>
+                                        </NavLink>
+                                        <NavLink href="javascript:void(0);">
+                                            <i className="nav-link-icon pe-7s-wallet"> </i>
+                                            <span>Link</span>
+                                            <div className="badge badge-pill badge-danger">12</div>
+                                        </NavLink>
+                                        <NavLink href="javascript:void(0);">
+                                            <span>Another Link</span>
+                                        </NavLink>
+                                        <NavLink disabled href="javascript:void(0);">
+                                            <i className="nav-link-icon pe-7s-box1"> </i>
+                                            <span>Disabled Link</span>
+                                        </NavLink>
+                                    </Nav>
+                                    <div className="divider"/>
+                                    <Nav pills justified>
+                                        <NavItem>
+                                            <NavLink active href="javascript:void(0);">
+                                                <i className="nav-link-icon pe-7s-settings"> </i>
+                                                Justified
+                                            </NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink href="javascript:void(0);">
+                                                <i className="nav-link-icon pe-7s-chat"> </i>
+                                                Link
+                                                <div className="badge badge-success">NEW</div>
+                                            </NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink href="javascript:void(0);">
+                                                Another Link
+                                            </NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink disabled href="javascript:void(0);">
+                                                <i className="nav-link-icon pe-7s-box1"> </i>
+                                                Disabled Link
+                                            </NavLink>
+                                        </NavItem>
+                                    </Nav>
                                 </CardBody>
                             </Card>
                         </Col>
