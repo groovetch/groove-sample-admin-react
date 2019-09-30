@@ -1,3 +1,3 @@
 export default {
-  class: 'table-alternate'
+  class: 'table-'
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Polar} from 'react-chartjs-2';
+import chartColor from './cfg';
 
 const data = {
   datasets: [{
@@ -11,11 +12,18 @@ const data = {
       14
     ],
     backgroundColor: [
-      '#8dace7',
-      '#4BC0C0',
-      '#ef869e',
-      '#E7E9ED',
-      '#71deb9'
+        chartColor.color01,
+        chartColor.color04,
+        chartColor.color02,
+        chartColor.color07,
+        chartColor.color08,
+    ],
+    hoverBackgroundColor: [
+        chartColor.color01Hover,
+        chartColor.color04Hover,
+        chartColor.color02Hover,
+        chartColor.color07Hover,
+        chartColor.color08Hover,
     ],
     label: 'My dataset' // for legend
   }],

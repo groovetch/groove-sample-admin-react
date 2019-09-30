@@ -1,5 +1,6 @@
 import React from 'react';
 import {Doughnut} from 'react-chartjs-2';
+import chartColor from './cfg';
 
 function getRandomInt (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -14,14 +15,14 @@ const getState = () => ({
     datasets: [{
         data: [getRandomInt(50, 200), getRandomInt(100, 150), getRandomInt(150, 250)],
         backgroundColor: [
-            '#cbd5dc',
-            '#71deb9',
-            '#ef869e'
+            chartColor.color04,
+            chartColor.color05,
+            chartColor.color06
         ],
         hoverBackgroundColor: [
-            '#7097e1',
-            '#4dd6a7',
-            '#eb6886'
+            chartColor.color04Hover,
+            chartColor.color05Hover,
+            chartColor.color06Hover
         ]
     }]
 });

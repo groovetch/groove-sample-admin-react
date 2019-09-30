@@ -1,5 +1,6 @@
 import React from 'react';
 import {Doughnut} from 'react-chartjs-2';
+import chartColor from './cfg';
 
 const data = {
     labels: [
@@ -10,14 +11,14 @@ const data = {
     datasets: [{
         data: [300, 50, 100],
         backgroundColor: [
-            '#8dace7',
-            '#71deb9',
-            '#ef869e'
+            chartColor.color01,
+            chartColor.color02,
+            chartColor.color03
         ],
         hoverBackgroundColor: [
-            '#7097e1',
-            '#4dd6a7',
-            '#eb6886'
+            chartColor.color01Hover,
+            chartColor.color02Hover,
+            chartColor.color03Hover
         ]
     }]
 };

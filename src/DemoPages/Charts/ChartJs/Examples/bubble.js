@@ -1,5 +1,6 @@
 import React from 'react';
 import {Bubble} from 'react-chartjs-2';
+import chartColor from './cfg';
 
 const data = {
   labels: ['January'],
