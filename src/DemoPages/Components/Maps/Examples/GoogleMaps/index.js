@@ -13,10 +13,10 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 class GoogleMapsExample extends React.Component {
     static defaultProps = {
         center: {
-            lat: 59.95,
-            lng: 30.33
+            lat: 10.771396,
+            lng: 106.700423
         },
-        zoom: 11
+        zoom: 12
     };
     render() {
 
@@ -38,13 +38,14 @@ class GoogleMapsExample extends React.Component {
                                     </CardTitle>
                                     <div style={{ height: '100vh', width: '100%' }}>
                                         <GoogleMapReact
+                                            bootstrapURLKeys={{ key: 'AIzaSyAZoLx4H1HW6rWIqZwmO5OzzOxlJiXfOVk' }}
                                             defaultCenter={this.props.center}
                                             defaultZoom={this.props.zoom}
                                         >
                                             <AnyReactComponent
-                                                lat={59.955413}
-                                                lng={30.337844}
-                                                text={'Example Text'}
+                                                lat={10.771396}
+                                                lng={106.700423}
+                                                text={''}
                                             />
                                         </GoogleMapReact>
                                     </div>

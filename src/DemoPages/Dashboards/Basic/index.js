@@ -252,12 +252,12 @@ export default class AnalyticsDashboard1 extends Component {
                                                     <AreaChart data={data} margin={{top: -45, right: 0, left: 0, bottom: 0}}>
                                                         <defs>
                                                             <linearGradient id="colorPv2" x1="0" y1="0" x2="0" y2="1">
-                                                                <stop offset="10%" stopColor="var(--warning)" stopOpacity={0.7}/>
-                                                                <stop offset="90%" stopColor="var(--warning)" stopOpacity={0}/>
+                                                                <stop offset="10%" stopColor="#094277" stopOpacity={0.7}/>
+                                                                <stop offset="90%" stopColor="#094277" stopOpacity={0}/>
                                                             </linearGradient>
                                                         </defs>
                                                         <Tooltip/>
-                                                        <Area type='monotoneX' dataKey='uv' stroke='var(--warning)' strokeWidth={2} fillOpacity={1}
+                                                        <Area type='monotoneX' dataKey='uv' stroke='#094277' strokeWidth={2} fillOpacity={1}
                                                               fill="url(#colorPv2)"/>
                                                     </AreaChart>
                                                 </ResponsiveContainer>
@@ -269,7 +269,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                     <ComposedChart data={data2}>
                                                         <CartesianGrid stroke="#ffffff"/>
                                                         <Area type="monotone" dataKey="amt" fill="#f7ffd0" stroke="#85a200"/>
-                                                        <Bar dataKey="pv" barSize={16} fill="var(--primary)"/>
+                                                        <Bar dataKey="pv" barSize={16} fill="#094277"/>
                                                         <Line type="monotone" dataKey="uv" strokeWidth="3" stroke="var(--danger)"/>
                                                     </ComposedChart>
                                                 </ResponsiveContainer>
@@ -450,10 +450,10 @@ export default class AnalyticsDashboard1 extends Component {
                             <Col md="12" lg="6">
                                 <Row>
                                     <Col md="6">
-                                        <div className="card mb-3 bg-arielle-smile widget-chart text-white card-border">
+                                        <div className="card mb-3 grv-gradient-1 widget-chart text-white card-border">
                                             <div className="icon-wrapper rounded-circle">
                                                 <div className="icon-wrapper-bg bg-white opacity-10"/>
-                                                <i className="lnr-cog icon-gradient bg-arielle-smile"/>
+                                                <i className="lnr-cog icon-gradient grv-gradient-1"/>
                                             </div>
                                             <div className="widget-numbers">
                                                 87,4
@@ -468,10 +468,10 @@ export default class AnalyticsDashboard1 extends Component {
                                         </div>
                                     </Col>
                                     <Col md="6">
-                                        <div className="card mb-3 bg-midnight-bloom widget-chart text-white card-border">
+                                        <div className="card mb-3 grv-gradient-2 widget-chart text-white card-border">
                                             <div className="icon-wrapper rounded">
                                                 <div className="icon-wrapper-bg bg-white opacity-10"/>
-                                                <i className="lnr-screen icon-gradient bg-warm-flame"/>
+                                                <i className="lnr-screen icon-gradient grv-gradient-2"/>
                                             </div>
                                             <div className="widget-numbers">
                                                 17.2k
@@ -486,10 +486,10 @@ export default class AnalyticsDashboard1 extends Component {
                                         </div>
                                     </Col>
                                     <Col md="6">
-                                        <div className="card mb-3 bg-grow-early widget-chart text-white card-border">
+                                        <div className="card mb-3 grv-gradient-3 widget-chart text-white card-border">
                                             <div className="icon-wrapper rounded">
-                                                <div className="icon-wrapper-bg bg-dark opacity-9"/>
-                                                <i className="lnr-graduation-hat text-white"/>
+                                                <div className="icon-wrapper-bg bg-light opacity-9"/>
+                                                <i className="lnr-graduation-hat grv-gradient-3 icon-gradient"/>
                                             </div>
                                             <div className="widget-numbers">
                                                 63.2k
@@ -504,7 +504,7 @@ export default class AnalyticsDashboard1 extends Component {
                                         </div>
                                     </Col>
                                     <Col md="6">
-                                        <div className="card mb-3 bg-love-kiss widget-chart card-border">
+                                        <div className="card mb-3 grv-gradient-4 widget-chart card-border">
                                             <div className="widget-chart-content text-white">
                                                 <div className="icon-wrapper rounded-circle">
                                                     <div className="icon-wrapper-bg bg-white opacity-4"/>
@@ -800,13 +800,13 @@ export default class AnalyticsDashboard1 extends Component {
                                         <div className="widget-description text-success">
                                             <FontAwesomeIcon icon={faAngleUp}/>
                                             <span className="pl-1">175.5%</span>
-                                        </div>
+                                        </div> 
                                     </div>
                                     <div className="widget-chart-wrapper">
                                         <ResponsiveContainer width='100%' aspect={3.0 / 1.0}>
                                             <LineChart data={data}
                                                        margin={{top: 0, right: 5, left: 5, bottom: 0}}>
-                                                <Line type='monotone' dataKey='pv' stroke='#3ac47d' strokeWidth={3}/>
+                                                <Line type='monotone' dataKey='pv' stroke='#ff5cab' strokeWidth={3}/>
                                             </LineChart>
                                         </ResponsiveContainer>
                                     </div>

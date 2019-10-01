@@ -1,9 +1,9 @@
 {
-  "name": "architectui-react-theme-free",
+  "name": "groove-sample-admin-template--react",
   "version": "1.0.0",
   "private": true,
-  "description": "ArchitectUI - Bootstrap 4 ReactJS Admin Dashboard Template FREE",
-  "author": "DashboardPack.com",
+  "description": "Groove Sample Admin Template ReactJS",
+  "author": "Groove Technology Vietnam",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DashboardPack/architectui-react-theme-free"
@@ -110,6 +110,8 @@
     "animate-sass": "0.8.2",
     "css-loader": "1.0.1",
     "node-sass": "4.10.0",
+    "prettier": "1.18.2",
+    "prettier-stylelint": "0.4.2",
     "sass-loader": "6.0.6",
     "webpack-dev-server": "3.0.0"
   },

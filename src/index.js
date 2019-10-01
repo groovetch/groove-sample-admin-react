@@ -2,12 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import registerServiceWorker from './registerServiceWorker';
 import { unregister } from './registerServiceWorker';
-
 import { HashRouter } from 'react-router-dom';
-// import './assets/base.css';
-// import './assets/demo.scss';
-
-import './assets/demo2.scss';
+import './assets/main.scss';
 
 import Main from './DemoPages/Main';
 import configureStore from './config/configureStore';

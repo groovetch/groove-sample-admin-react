@@ -6,6 +6,8 @@
 @import "./styling/grv.lnr-icon";
 @import "./styling/grv.layout";
 
+@import "./styling/grv.app";
+
 .border-primary {
   border-color: $grvColor03;
 }
@@ -115,7 +117,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: $font-main;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -136,7 +138,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: $font-main;
   font-size: 0.88rem;
   font-weight: 400;
   line-height: 1.5;
@@ -4364,7 +4366,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: $font-main;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4477,7 +4479,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 320px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: $font-main;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7512,256 +7514,6 @@ a, button, .btn {
   transition: all .4s linear;
 }
 
-.app-header {
-  height: 60px;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  position: relative;
-  z-index: 10;
-  transition: all .2s;
-}
-
-.app-header.header-shadow {
-  box-shadow: 0 0.46875rem 2.1875rem rgba(0, 0, 0, 0.03), 0 0.9375rem 1.40625rem rgba(0, 0, 0, 0.03), 0 0.25rem 0.53125rem rgba(0, 0, 0, 0.05), 0 0.125rem 0.1875rem rgba(0, 0, 0, 0.03);
-}
-
-.app-header .app-header__content {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  flex: 1;
-  padding: 0 1.5rem;
-  height: 60px;
-}
-
-.app-header .app-header__content .app-header-left {
-  display: flex;
-  align-items: center;
-}
-
-.app-header .app-header__content .app-header-right {
-  align-items: center;
-  display: flex;
-  margin-left: auto;
-}
-
-.app-header .header-user-info > .widget-heading, .app-header .header-user-info > .widget-subheading {
-  white-space: nowrap;
-}
-
-.app-header .header-user-info > .widget-subheading {
-  font-size: 0.8rem;
-}
-
-.app-header__logo {
-  padding: 0 1.5rem;
-  height: 60px;
-  width: 280px;
-  display: flex;
-  align-items: center;
-  transition: width .2s;
-}
-
-.app-header__logo .logo-src {
-  height: 23px;
-  width: 97px;
-  background: url("~assets/utils/images/logo-inverse.png");
-}
-
-.app-header__menu, .app-header__mobile-menu {
-  display: none;
-  padding: 0 1.5rem;
-  height: 60px;
-  align-items: center;
-}
-
-.fixed-header .app-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
-
-.fixed-header .app-header .app-header__logo {
-  visibility: visible;
-}
-
-.fixed-header .app-main {
-  padding-top: 60px;
-}
-
-.fixed-header:not(.fixed-sidebar):not(.closed-sidebar) .app-sidebar .app-header__logo {
-  visibility: hidden;
-}
-
-.header-btn-lg {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.header-btn-lg .hamburger-inner, .header-btn-lg .hamburger-inner::before, .header-btn-lg .hamburger-inner::after {
-  background: #868e96;
-}
-
-.app-header.header-text-light .app-header__logo {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.app-header.header-text-light .app-header-left > .nav > li > .nav-link {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.app-header.header-text-light .app-header-left > .nav > li > .nav-link .nav-link-icon {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.app-header.header-text-light .app-header-left > .nav > li > .nav-link:hover {
-  color: white;
-}
-
-.app-header.header-text-light .app-header-right .icon-wrapper-alt svg {
-  fill: rgba(255, 255, 255, 0.7);
-  transition: all .2s;
-}
-
-.app-header.header-text-light .app-header-right .icon-wrapper-alt .icon-wrapper-bg {
-  background: rgba(255, 255, 255, 0.1) !important;
-  transition: all .2s;
-  opacity: 1;
-}
-
-.app-header.header-text-light .app-header-right .icon-wrapper-alt:hover svg {
-  fill: rgba(255, 255, 255, 0.95);
-}
-
-.app-header.header-text-light .app-header-right .icon-wrapper-alt:hover .icon-wrapper-bg {
-  background: rgba(255, 255, 255, 0.15) !important;
-}
-
-.app-header.header-text-light .app-header-right .icon-wrapper-alt .badge-dot {
-  border-color: transparent;
-}
-
-.app-header.header-text-light .app-header-right > .header-btn-lg .widget-content-left .btn-group > .btn-link, .app-header.header-text-light .app-header-right > .header-btn-lg .widget-heading, .app-header.header-text-light .app-header-right > .header-btn-lg .widget-subheading {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.app-header.header-text-light .app-header-right > .header-btn-lg .header-user-info > .btn-shadow {
-  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
-}
-
-.app-header.header-text-light .search-wrapper .input-holder .search-icon {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.app-header.header-text-light .search-wrapper.active .input-holder {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.app-header.header-text-light .search-wrapper.active .input-holder .search-input {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.app-header.header-text-light .search-wrapper.active .input-holder .search-icon {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.app-header.header-text-light .header-btn-lg .hamburger-inner, .app-header.header-text-light .header-btn-lg .hamburger.is-active .hamburger-inner, .app-header.header-text-light .header-btn-lg .hamburger-inner::before, .app-header.header-text-light .header-btn-lg .hamburger-inner::after, .app-header.header-text-light .header__pane .hamburger-inner, .app-header.header-text-light .header__pane .hamburger.is-active .hamburger-inner, .app-header.header-text-light .header__pane .hamburger-inner::before, .app-header.header-text-light .header__pane .hamburger-inner::after {
-  background-color: rgba(255, 255, 255, 0.8) !important;
-}
-
-.app-header.header-text-light .search-wrapper .input-holder .search-icon span::after {
-  border-color: rgba(255, 255, 255, 0.8);
-}
-
-.app-header.header-text-light .search-wrapper .close::before, .app-header.header-text-light .search-wrapper .close::after, .app-header.header-text-light .search-wrapper .input-holder .search-icon span::before {
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.app-header.header-text-light .app-header__logo .logo-src {
-  background: url("~assets/utils/images/logo.png");
-}
-
-.app-header.header-text-light .app-header__mobile-menu .hamburger-inner, .app-header.header-text-light .app-header__mobile-menu .hamburger-inner::before, .app-header.header-text-light .app-header__mobile-menu .hamburger-inner::after {
-  background: rgba(255, 255, 255, 0.9);
-}
-
-.app-header.header-text-dark .app-header__logo {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.app-header.header-text-dark .app-header-left > .nav > li > .nav-link {
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.app-header.header-text-dark .app-header-left > .nav > li > .nav-link .nav-link-icon {
-  color: rgba(0, 0, 0, 0.8);
-}
-
-.app-header.header-text-dark .app-header-left > .nav > li > .nav-link:hover {
-  color: black;
-}
-
-.app-header.header-text-dark .app-header-right .icon-wrapper-alt svg {
-  fill: rgba(0, 0, 0, 0.7);
-  transition: all .2s;
-}
-
-.app-header.header-text-dark .app-header-right .icon-wrapper-alt .icon-wrapper-bg {
-  background: rgba(0, 0, 0, 0.1) !important;
-  transition: all .2s;
-  opacity: 1;
-}
-
-.app-header.header-text-dark .app-header-right .icon-wrapper-alt:hover svg {
-  fill: rgba(0, 0, 0, 0.95);
-}
-
-.app-header.header-text-dark .app-header-right .icon-wrapper-alt:hover .icon-wrapper-bg {
-  background: rgba(0, 0, 0, 0.15) !important;
-}
-
-.app-header.header-text-dark .app-header-right .icon-wrapper-alt .badge-dot {
-  border-color: transparent;
-}
-
-.app-header.header-text-dark .app-header-right .widget-content-left > .btn-group > .btn-link, .app-header.header-text-dark .app-header-right .widget-content-left .widget-heading, .app-header.header-text-dark .app-header-right .widget-content-left .widget-subheading {
-  color: rgba(0, 0, 0, 0.8);
-}
-
-.app-header.header-text-dark .search-wrapper .input-holder .search-icon {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.app-header.header-text-dark .search-wrapper.active .input-holder {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.app-header.header-text-dark .search-wrapper.active .input-holder .search-input {
-  color: rgba(0, 0, 0, 0.8);
-}
-
-.app-header.header-text-dark .search-wrapper.active .input-holder .search-icon {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.app-header.header-text-dark .header__pane .hamburger-inner, .app-header.header-text-dark .header__pane .hamburger.is-active .hamburger-inner, .app-header.header-text-dark .header__pane .hamburger-inner::before, .app-header.header-text-dark .header__pane .hamburger-inner::after {
-  background-color: rgba(0, 0, 0, 0.8) !important;
-}
-
-.app-header.header-text-dark .search-wrapper .input-holder .search-icon span::after {
-  border-color: rgba(0, 0, 0, 0.8);
-}
-
-.app-header.header-text-dark .search-wrapper .close::before, .app-header.header-text-dark .search-wrapper .close::after, .app-header.header-text-dark .search-wrapper .input-holder .search-icon span::before {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.app-header.header-text-dark .app-header__logo .logo-src {
-  background: url("~assets/utils/images/logo-inverse.png");
-}
-
 .app-sidebar {
   width: 280px;
   display: flex;
@@ -10434,7 +10186,7 @@ body {
   justify-content: space-between;
   max-height: 800px;
   overflow: hidden;
-  font-family: sans-serif;
+  font-family: $font-main;
   cursor: pointer;
   direction: ltr;
 }
@@ -11628,6 +11380,22 @@ body {
 @include runBackgroundType('alternate', $grvColor07);
 @include runBackgroundType('light', $grvColor13);
 @include runBackgroundType('dark', lighten($grvColor14, 10%));
+
+.grv-gradient-1 {
+  @include getRadialGradient($grvColor03, $grvColor03Dark);
+}
+
+.grv-gradient-2 {
+  @include getRadialGradient($grvColor04, darken($grvColor04, 15%));
+}
+
+.grv-gradient-3 {
+  @include getRadialGradient($grvColor11, darken($grvColor11, 10%));
+}
+
+.grv-gradient-4 {
+  @include getRadialGradient($grvColor08, darken($grvColor08, 10%));
+}
 
 // @include runListgroupItemType('info', $grvColor04, $grvColor01);
 // @include runListgroupItemType('warning', $grvColor10, $grvColor01);
