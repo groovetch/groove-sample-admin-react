@@ -14,7 +14,12 @@ const Charts = lazy(() => import('../../DemoPages/Charts'));
 const Forms = lazy(() => import('../../DemoPages/Forms'));
 const Tables = lazy(() => import('../../DemoPages/Tables'));
 
+const renderTextLoader = name => (
+  <Fragment>{`Please wait while we load all the ${name} examples<small>Because this is a demonstration we load at once all the ${name} examples. This wouldn't happen in a real live app!</small>`}</Fragment>
+)
+
 const AppMain = () => {
+
 
     return (
         <Fragment>
@@ -25,8 +30,9 @@ const AppMain = () => {
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <h6 className="mt-5">
-                            Please wait while we load all the Components examples
-                            <small>Because this is a demonstration we load at once all the Components examples. This wouldn't happen in a real live app!</small>
+                            {
+                              //renderTextLoader('Components')
+                            }
                         </h6>
                     </div>
                 </div>
@@ -40,8 +46,9 @@ const AppMain = () => {
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <h6 className="mt-5">
-                            Please wait while we load all the Forms examples
-                            <small>Because this is a demonstration we load at once all the Forms examples. This wouldn't happen in a real live app!</small>
+                            {
+                              //renderTextLoader('Forms')
+                            }
                         </h6>
                     </div>
                 </div>
@@ -55,8 +62,9 @@ const AppMain = () => {
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <h6 className="mt-3">
-                            Please wait while we load all the Charts examples
-                            <small>Because this is a demonstration we load at once all the Charts examples. This wouldn't happen in a real live app!</small>
+                            {
+                              //renderTextLoader('Charts')
+                            }
                         </h6>
                     </div>
                 </div>
@@ -70,8 +78,9 @@ const AppMain = () => {
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <h6 className="mt-5">
-                            Please wait while we load all the Tables examples
-                            <small>Because this is a demonstration we load at once all the Tables examples. This wouldn't happen in a real live app!</small>
+                            {
+                              //renderTextLoader('Tables')
+                            }
                         </h6>
                     </div>
                 </div>
@@ -85,8 +94,9 @@ const AppMain = () => {
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <h6 className="mt-3">
-                            Please wait while we load all the Elements examples
-                            <small>Because this is a demonstration we load at once all the Elements examples. This wouldn't happen in a real live app!</small>
+                            {
+                              //renderTextLoader('Elements')
+                            }
                         </h6>
                     </div>
                 </div>
@@ -100,8 +110,9 @@ const AppMain = () => {
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <h6 className="mt-3">
-                            Please wait while we load all the Dashboard Widgets examples
-                            <small>Because this is a demonstration we load at once all the Dashboard Widgets examples. This wouldn't happen in a real live app!</small>
+                            {
+                              //renderTextLoader('Dashboard Widgets')
+                            }
                         </h6>
                     </div>
                 </div>
@@ -115,8 +126,9 @@ const AppMain = () => {
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <h6 className="mt-3">
-                            Please wait while we load all the Dashboards examples
-                            <small>Because this is a demonstration, we load at once all the Dashboards examples. This wouldn't happen in a real live app!</small>
+                            {
+                              //renderTextLoader('Dashboards')
+                            }
                         </h6>
                     </div>
                 </div>

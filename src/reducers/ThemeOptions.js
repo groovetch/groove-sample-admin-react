@@ -113,7 +113,7 @@ export default function reducer(state = {
     backgroundColor: 'bg-royal sidebar-text-light',
     headerBackgroundColor: 'bg-strong-bliss header-text-light',
     enableMobileMenuSmall: '',
-    enableBackgroundImage: true,
+    enableBackgroundImage: false,
     enableClosedSidebar: false,
     enableFixedHeader: true,
     enableHeaderShadow: true,
