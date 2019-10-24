@@ -140,7 +140,6 @@ const AppMain = () => {
                 <Redirect to="/dashboards/basic"/>
             )}/>
             <ToastContainer/>
-            <span>AAAA</span>
         </Fragment>
     )
 };
