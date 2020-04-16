@@ -113,7 +113,7 @@
     "prettier": "1.18.2",
     "prettier-stylelint": "0.4.2",
     "sass-loader": "6.0.6",
-    "webpack-dev-server": "3.0.0"
+    "webpack-dev-server": "3.1.11"
   },
   "scripts": {
     "start": "cross-env NODE_PATH=./src node scripts/start.js",
