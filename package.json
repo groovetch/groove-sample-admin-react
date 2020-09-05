@@ -109,7 +109,7 @@
   "devDependencies": {
     "animate-sass": "0.8.2",
     "css-loader": "1.0.1",
-    "node-sass": "4.10.0",
+    "node-sass": "4.13.1",
     "prettier": "1.18.2",
     "prettier-stylelint": "0.4.2",
     "sass-loader": "6.0.6",
